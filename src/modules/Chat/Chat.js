@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Loader from '../../design-components/Loader';
 import TopBar from '../../design-components/TopBar';
-import api from '../../axios/api';
-<<<<<<< HEAD
-import runtimeEnv from '@mars/heroku-js-runtime-env' ; 
-const env = runtimeEnv(); 
-
-const socket = io(env.REACT_APP_BASE_URL);
-=======
 import socket from '../../utils/socketClient';
 import Message from '../../design-components/Message';
 import ChatInput from '../../design-components/ChatInput';
->>>>>>> 41851f7253f8fd1df2a9671d0a6e021400446574
+import api from '../../axios/api';
+// import runtimeEnv from '@mars/heroku-js-runtime-env' ; 
+// const env = runtimeEnv(); 
 
 function Chat() {
   const [loading, setLoading] = useState(true);

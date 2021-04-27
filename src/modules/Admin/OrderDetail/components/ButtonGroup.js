@@ -1,11 +1,11 @@
 import React from 'react';
-import axios from 'axios';
 import PropTypes from 'prop-types';
 import ButtonDelivered from './ButtonDelivered';
+import api from '../../../../axios/api'
 
 function ButtonGroup({ setStatus, id }) {
   const handleClick = (sendStatus) => {
-    axios.put(`http://localhost:3001/sales/${id}`, { status: sendStatus })
+    api.put(`/sales/${id}`, { status: sendStatus })
       .then((response) => { setStatus(response.data.status); })
       .catch((err) => console.log(err.message));
   };

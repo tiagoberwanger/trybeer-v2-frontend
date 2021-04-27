@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
 import SideBarAdmin from '../../../design-components/SideBarAdmin';
 import Loader from '../../../design-components/Loader';
 import DetailAdminCard from './components/DetailAdminCard';
 import ButtonGroup from './components/ButtonGroup';
+import api from '../../../axios/api'
 
 const styling = 'text-sm md:text-base lg:text-lg text-green-500';
 
@@ -16,7 +16,7 @@ function AdminOrderDetail() {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/sales/${id}`)
+    api.get(`/sales/${id}`)
       .then((response) => {
         setSale(response.data);
         setStatus(response.data.status);

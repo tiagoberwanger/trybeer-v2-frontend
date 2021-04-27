@@ -1,9 +1,9 @@
 import axios from 'axios';
-import runtimeEnv from '@mars/heroku-js-runtime-env' ; 
-const env = runtimeEnv(); 
+// import runtimeEnv from '@mars/heroku-js-runtime-env' ; 
+// const env = runtimeEnv(); 
 
 const api = axios.create({
-  baseURL: env.REACT_APP_BASE_URL || 'http://localhost:3001',
+  baseURL: process.env.REACT_APP_BASE_URL,
 });
 
 api.interceptors.request.use((config) => {
