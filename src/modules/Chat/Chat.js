@@ -5,6 +5,8 @@ import socket from '../../utils/socketClient';
 import Message from '../../design-components/Message';
 import ChatInput from '../../design-components/ChatInput';
 import api from '../../axios/api';
+// import runtimeEnv from '@mars/heroku-js-runtime-env' ; 
+// const env = runtimeEnv(); 
 
 function Chat() {
   const [loading, setLoading] = useState(true);
