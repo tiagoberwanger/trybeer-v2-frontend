@@ -29,7 +29,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 # Submissão
 
-A submissão desse projeto foi feita no [Heroku](https://heroku.com/), e está pronta pra uso no seguinte [link](https://tiagoberwanger-front.herokuapp.com/)
+A submissão desse projeto foi feita no [Heroku](https://heroku.com/), e está pronta pra uso no seguinte [link](https://trybeer-ft.herokuapp.com/)
 
 # Autores
 
